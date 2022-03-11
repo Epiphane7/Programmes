@@ -9,13 +9,12 @@ int factorielle (int n)
     }
     else
     {
-        for (i =1; i<=n-1; n++)
+        for (i =1; i<=n-i; i++)
         {
-            n=n*(n-1);
+            n=n*(n-i);
         }
+        return n;
     };
-
-  return n;
 };
 int main()
 {
@@ -24,6 +23,6 @@ int main()
     printf("Entrez n s'il vous plait! \n");
  scanf ("%i",&n);
  result=factorielle(n);
- printf("Entrez n s'il vous plait! %i\n",n,result);
+ printf("%i factorielle vaut %i\n",n,result);
 return 0;
 }
